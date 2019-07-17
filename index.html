@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BakssaL</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="textBox"><p>서민은<br>BakssaL!</p></div>
+        <div class="username"></div>
+        <script type="text/javascript">
+            const members = [];
+
+            const name = {
+                "log": []
+            };
+
+            class CreateMembers {
+                constructor() {
+                    this.log = [];
+                }
+            };
+
+            const nameBox = document.querySelector(".username");
+
+            function getUsersName() {
+
+                let userName = window.prompt("Your Name Please");
+
+                if (members.includes(userName)) {
+                    return nameBox.innerHTML = userName.valueOf();
+                } else {
+                    const userName = new CreateMembers();
+                    members.push(userName);
+
+                    return nameBox.innerHTML = userName.valueOf();
+                    
+                };
+                
+            };
+
+            window.onload = () => {
+                getUsersName();
+            };
+
+        </script>
+    </body>
+</html>
