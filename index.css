@@ -11,8 +11,24 @@ body > div{
 }
 
 .username {
-    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
     position: fixed;
+    border-color: aquamarine;
+    border-width: 1px;
+    border-style: solid;
     top: 20px;
     right: 0px;
+    font-size: 5em;
+    color: aquamarine;
+}
+
+.row {
+    position: fixed;
+    left: 0;
+    top: 30px;
+    
+}
+#forSmall {
+    display: none;
 }

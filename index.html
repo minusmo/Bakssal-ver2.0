@@ -1,46 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BakssaL</title>
         <link rel="stylesheet" href="index.css">
+        <!-- Compressed CSS -->
+        <link rel="stylesheet" href="css/foundation.css" />
     </head>
     <body>
         <div class="textBox"><p>서민은<br>BakssaL!</p></div>
         <div class="username"></div>
+
+        
+            <div class="column small-4 medium-2">
+              <div class="button-group stacked">
+                <a class="button">One</a>
+                <a class="button">Two</a>
+                <a class="button">Three</a>
+              </div>
+            </div>
+  
+
+        <div class="stacked-for-medium button-group" id="forMedium">
+            <a class="button">How</a>
+            <a class="button">Low</a>
+            <a class="button">Can</a>
+            <a class="button">You</a>
+            <a class="button">Go</a>
+        </div>
+
+        <div class="stacked-for-small button-group" id="forSmall">
+            <a class="button">How</a>
+            <a class="button">Low</a>
+            <a class="button">Can</a>
+            <a class="button">You</a>
+            <a class="button">Go</a>
+        </div>
+        
+        <!-- Compressed JavaScript -->
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.min.js"></script>
         <script type="text/javascript">
-            const members = [];
 
-            const name = {
+            const members = ["김경호", "김준영", "김성호", "김성윤", "박판기", "박제환", "김우재", "김명준", "박성렬", "음호준", "정재원", 
+        "이민우", "박범진", "박예찬", "정성우", "양진호", "김의종", "최성호", "이하원", "최영환", "박주찬", "정찬슬", "전재훈" ]; 
+
+            const logList = [];
+
+            const rockScissorsPaper = ["가위", "바위", "보"];
+
+            /*const name = {
                 "log": []
-            };
+            };*/
 
-            class CreateMembers {
-                constructor() {
+            /*class CreateMembers {
+                constructor(name) {
+                    this.name = name;
                     this.log = [];
                 }
-            };
+            };*/
 
             const nameBox = document.querySelector(".username");
 
             function getUsersName() {
 
-                let userName = window.prompt("Your Name Please");
+                let userName = window.prompt("Your Name Please", "한글로입력해주세요.");
+
+                while (userName === "" || userName === null) {
+                    userName = window.prompt("Your Name Please");
+                };
 
                 if (members.includes(userName)) {
-                    return nameBox.innerHTML = userName.valueOf();
-                } else {
-                    const userName = new CreateMembers();
-                    members.push(userName);
 
-                    return nameBox.innerHTML = userName.valueOf();
-                    
+                    let nowDate = new Date();
+                    logList.push(userName + " " + nowDate);
+
+                    nameBox.innerHTML = userName;
+
+                    return
+
+                } else {
+
+                    for(let i = 0; i < 5; i++){
+
+                        let userCard = window.prompt("가위,바위,보 중 하나 고르세요", "한글로 가위, 바위 ,보");
+                        let randomNumber = Math.floor(Math.random(3));
+
+                        if (userCard === rockScissorsPaper[randomNumber]) {
+                            window.open("https://www.youtube.com/channel/UC5zfekh3C2rPPaXvFus4Phw/featured", "_self");
+                        }
+                    }
+
+                    return window.alert("You're defeated! bye bye");
                 };
                 
             };
 
+            
+
             window.onload = () => {
                 getUsersName();
+                $(document).foundation();
+                
             };
 
         </script>
