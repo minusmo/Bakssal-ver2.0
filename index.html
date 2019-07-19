@@ -6,28 +6,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BakssaL</title>
         <link rel="stylesheet" href="index.css">
-        <!-- Compressed CSS -->
-        //<link rel="stylesheet" href="css/foundation.css" />
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        
     </head>
     <body>
         <div class="textBox"><p>서민은<br>BakssaL!</p></div>
         <div class="username"></div>
 
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+              <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+              <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+              <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+              <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+        </div>
+
         
-            <div class="column small-4 medium-2">
-              <div class="button-group stacked">
-                <a class="button">One</a>
-                <a class="button">Two</a>
-                <a class="button">Three</a>
-              </div>
-            </div>
+            
   
         
         <!-- Compressed JavaScript -->
         <script src="js/vendor/jquery.js"></script>
-        //<script src="js/vendor/what-input.js"></script>
-        //<script src="js/vendor/foundation.min.js"></script>
         <Script type="module" src="index.js"></Script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript">
 
             import logList from index.js
@@ -37,6 +45,8 @@
 
 
             const rockScissorsPaper = ["가위", "바위", "보"];
+
+            
 
             /*const name = {
                 "log": []
@@ -85,7 +95,10 @@
                 
             };
 
-            
+            document.addEventListener('DOMContentLoaded', function() {
+            const elems = document.querySelectorAll('.fixed-action-btn');
+            const instances = M.FloatingActionButton.init(elems, {direction: "top", hoverEnabled: false});
+            });
 
             window.onload = () => {
                 getUsersName();

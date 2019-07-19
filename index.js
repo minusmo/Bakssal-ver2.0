@@ -1,3 +1,3 @@
 const logList = [];
 
-export logList
+export logList;
