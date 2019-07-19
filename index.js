@@ -1,3 +1,1 @@
-const logList = [];
-
-export logList;
+export const logList = [];
