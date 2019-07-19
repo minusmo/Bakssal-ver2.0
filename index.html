@@ -7,7 +7,7 @@
         <title>BakssaL</title>
         <link rel="stylesheet" href="index.css">
         <!-- Compressed CSS -->
-        <link rel="stylesheet" href="css/foundation.css" />
+        //<link rel="stylesheet" href="css/foundation.css" />
     </head>
     <body>
         <div class="textBox"><p>서민은<br>BakssaL!</p></div>
@@ -22,33 +22,19 @@
               </div>
             </div>
   
-
-        <div class="stacked-for-medium button-group" id="forMedium">
-            <a class="button">How</a>
-            <a class="button">Low</a>
-            <a class="button">Can</a>
-            <a class="button">You</a>
-            <a class="button">Go</a>
-        </div>
-
-        <div class="stacked-for-small button-group" id="forSmall">
-            <a class="button">How</a>
-            <a class="button">Low</a>
-            <a class="button">Can</a>
-            <a class="button">You</a>
-            <a class="button">Go</a>
-        </div>
         
         <!-- Compressed JavaScript -->
         <script src="js/vendor/jquery.js"></script>
-        <script src="js/vendor/what-input.js"></script>
-        <script src="js/vendor/foundation.min.js"></script>
+        //<script src="js/vendor/what-input.js"></script>
+        //<script src="js/vendor/foundation.min.js"></script>
+        <Script type="module" src="index.js"></Script>
         <script type="text/javascript">
+
+            import logList from index.js
 
             const members = ["김경호", "김준영", "김성호", "김성윤", "박판기", "박제환", "김우재", "김명준", "박성렬", "음호준", "정재원", 
         "이민우", "박범진", "박예찬", "정성우", "양진호", "김의종", "최성호", "이하원", "최영환", "박주찬", "정찬슬", "전재훈" ]; 
 
-            const logList = [];
 
             const rockScissorsPaper = ["가위", "바위", "보"];
 
@@ -103,7 +89,7 @@
 
             window.onload = () => {
                 getUsersName();
-                $(document).foundation();
+              
                 
             };
 
