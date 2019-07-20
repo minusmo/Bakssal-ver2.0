@@ -1,28 +1,36 @@
 body > div{
     text-align: center;
     box-sizing: content-box;
-    font-size: 15em;
+    
 }
 
 body button.buttonOne{
+    font-size: 20px;
+    color: #063852;
     position: fixed;
     left: 0px; 
-    top: 30em;
+    top: 55vh;
     border: 0;
     margin: 0px;
-    border-radius: 20px;
-    background-color: #c4e0ff;
-    line-height: 4em;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: #e6df44;
+    
 
 }
 
 body button.buttonTwo{
+    font-size: 20px;
     position: fixed;
     left: 0;
-    top: 35em;
-    margin: 0%;
+    top: 45vh;
+    margin: 0px;
+    padding: 30px;
+    border: 0;
+    border-radius: 50px;
+    color: #063852;
+    background-color: #e6df44;
     
-    line-height: 2em;
 
 }
 
@@ -30,7 +38,9 @@ div.textBox{
     overflow: auto;
     z-index: 100;
     display: flexbox;
-    font-size: 25vw;
+    font-size: 15vw;
+    color: #063852;
+    font-family: 'Playfair Display', serif;
 
 }
 
@@ -39,13 +49,13 @@ div.textBox{
     margin: 0;
     padding: 0;
     position: fixed;
-    border-color: aquamarine;
+    border-color: #f0810f;
     border-width: 1px;
     border-style: solid;
     top: 20px;
     right: 0px;
     font-size: 5em;
-    color: aquamarine;
+    color: #f0810f;
 }
 
 
