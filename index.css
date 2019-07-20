@@ -4,12 +4,24 @@ body > div{
     font-size: 15em;
 }
 
-.textBox{
-    overflow: auto;
-    z-index: 100;
-    
+body button.buttonOne{
+    position: fixed;
+    left: 0px; 
+    top: 30px;
+    margin: 0px;
+    box-sizing: content-box;
+    line-height: 2em;
 
 }
+
+div.textBox{
+    overflow: auto;
+    z-index: 100;
+    display: flexbox;
+    font-size: 25vw;
+
+}
+
 
 .username {
     margin: 0;
@@ -24,21 +36,13 @@ body > div{
     color: aquamarine;
 }
 
-button {
-    display: block;
+
+body button.buttonTwo{
+    position: fixed;
+    left: 0;
+    top: 70px;
     margin: 0%;
     box-sizing: content-box;
     line-height: 2em;
 
-}
-
-body div #buttonGroup {
-    position: fixed;
-    left: 0; 
-    right: auto;
-    box-sizing: content-box;
-    background-color: blue; 
-    width: 12px; 
-    height: 12px;
-    z-index: 990;
 }

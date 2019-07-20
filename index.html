@@ -6,25 +6,31 @@
         <title>BakssaL</title>
 
 
-        <link rel="stylesheet" href="index.css">
+        
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
         <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+        <link type="text/css" rel="stylesheet" href="index.css">
+
+        <style>
+        
+        </style>
         
     </head>
     <body>
-        <div class="textBox"><p>서민은<br>BakssaL!</p>
+        <div class="textBox">
+            <p>서민은<br>BakssaL!</p>
         </div>
 
 
         <div class="username"></div>
 
 
-        <div id="buttonGroup">
-            <button>button1</button>
-            <button>button2</button>
-        </div>
+        
+        <button class="buttonOne">button1</button>
+        <button class="buttonTwo">button2</button>
+        
 
         
 
@@ -46,7 +52,7 @@
         
         <!-- Compressed JavaScript -->
         <script src="js/vendor/jquery.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
         <script type="text/javascript">
 
             const logList = [];
@@ -106,6 +112,8 @@
                 
             };
 
+            
+
            
 
             window.onload = () => {
@@ -114,6 +122,12 @@
                 const elems = document.querySelectorAll('.fixed-action-btn');
                 const instances = M.FloatingActionButton.init(elems, {direction: "right", hoverEnabled: false});
             });*/
+
+            /*if (window.innerWidth < 321) {
+                let textBox = document.querySelectorAll(".textBox");
+                textBox.innerHTML = ''
+                
+            }*/
               
                 
             };
