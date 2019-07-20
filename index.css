@@ -7,9 +7,21 @@ body > div{
 body button.buttonOne{
     position: fixed;
     left: 0px; 
-    top: 30px;
+    top: 30em;
+    border: 0;
     margin: 0px;
-    box-sizing: content-box;
+    border-radius: 20px;
+    background-color: #c4e0ff;
+    line-height: 4em;
+
+}
+
+body button.buttonTwo{
+    position: fixed;
+    left: 0;
+    top: 35em;
+    margin: 0%;
+    
     line-height: 2em;
 
 }
@@ -37,12 +49,3 @@ div.textBox{
 }
 
 
-body button.buttonTwo{
-    position: fixed;
-    left: 0;
-    top: 70px;
-    margin: 0%;
-    box-sizing: content-box;
-    line-height: 2em;
-
-}
