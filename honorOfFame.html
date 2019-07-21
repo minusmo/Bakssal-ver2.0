@@ -3,7 +3,7 @@
         <title>HonorOfFame</title>
 
         <style>
-            div {
+            div.wrapper div {
                 border: 1px solid blue;
             }
 
@@ -12,16 +12,58 @@
                 grid-template-columns: repeat(3, 1fr);
                 border: 1px solid red;
                 grid-auto-rows: 300px;
+                column-gap: 40px;
+                row-gap: 20px;
+            }
+
+            .first {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+            #boxOne {
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            div.wrapper .first .nested .badge {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                box-sizing: border-box;
+                padding: 5px;
+                border: 2px solid black;
+                border-radius: 3px;
+                width: 15px;
+                height: 15px;
+                font-weight: bold;
+                font-size: 1em;
+                text-anchor: middle;
             }
         </style>
     </head>
     <body>
         <div class="wrapper">
-            <div>one</div>
+            <div class="first">
+                <div class="nested" id="boxOne"><div class="badge" id="badgeOne">1</div></div>
+                <div class="nested">2</div>
+                <div class="nested">3</div>
+                <div class="nested">4</div>
+            </div>
             <div>two</div>
             <div>three</div>
             <div>four</div>
             <div>five</div>
+            <div>six</div>
+            <div>seven</div>
+            <div>eight</div>
+            <div>nine</div>
+            <div>ten</div>
         </div>
         
     </body>
