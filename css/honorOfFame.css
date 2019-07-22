@@ -1,0 +1,52 @@
+div.wrapper div {
+    border: 1px solid blue;
+}
+
+div.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid red;
+    grid-auto-rows: 300px;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.first {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+#boxOne {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 6em;
+}
+
+div.wrapper div div.badge {
+    position: relative;
+    left: 13px;
+    top: 10px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: 1px black;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    text-overflow: auto;
+    vertical-align: -3px;
+    font-family: 'Lato', sans-serif;
+}
+
+div.wrapper .first .nested {
+    text-align: center;
+    font-size: 4em;
+}
