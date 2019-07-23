@@ -9,28 +9,39 @@ body button.buttonOne{
     color: #063852;
     position: fixed;
     left: 0px; 
-    top: 55vh;
+    top: 15vh;
     border: 0;
     margin: 0px;
     padding: 30px;
     border-radius: 50px;
     background-color: #e6df44;
+    transition: background-color .7s;
     
 
+}
+
+body button.buttonOne:hover {
+    background-color: #e6dfff;
 }
 
 body button.buttonTwo{
     font-size: 20px;
     position: fixed;
     left: 0;
-    top: 45vh;
+    top: 5vh;
     margin: 0px;
     padding: 30px;
     border: 0;
     border-radius: 50px;
     color: #063852;
     background-color: #e6df44;
+    transition: background-color .7s;
     
+
+}
+
+body button.buttonTwo:hover {
+    background-color: #e6dfff;
 
 }
 
