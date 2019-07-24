@@ -12,6 +12,14 @@ div.wrapper {
     row-gap: 15px;
 }
 
+body div div img{
+    display: block;
+    height: 260px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 9px;
+}
+
 .first {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -81,4 +89,5 @@ body div.wrapper div img {
 
 .description {
     box-sizing: content-box;
+    text-align: center;
 }
