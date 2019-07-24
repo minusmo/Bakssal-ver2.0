@@ -9,10 +9,10 @@ body button.buttonOne{
     color: #063852;
     position: fixed;
     left: 0px; 
-    top: 15vh;
+    top: 6vh;
     border: 0;
     margin: 0px;
-    padding: 30px;
+    padding: 2vw;
     border-radius: 50px;
     background-color: #e6df44;
     transition: background-color .7s;
@@ -28,9 +28,9 @@ body button.buttonTwo{
     font-size: 20px;
     position: fixed;
     left: 0;
-    top: 5vh;
+    top: 0.4vh;
     margin: 0px;
-    padding: 30px;
+    padding: 2vw;
     border: 0;
     border-radius: 50px;
     color: #063852;
