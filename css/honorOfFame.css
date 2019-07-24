@@ -1,15 +1,18 @@
-
+body {
+    font-family: 'Playfair Display', serif;
+}
 div.wrapper div {
-    border: 1px solid blue;
+    border: none;
 }
 
 div.wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid red;
+    border: none;
     grid-auto-rows: 300px;
     column-gap: 15px;
     row-gap: 15px;
+    background-color: #f9f6f0;
 }
 
 body div div img{
@@ -27,6 +30,7 @@ body div div img{
     grid-row-end: 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    background-color: #e2d4d3;
 
 }
 
@@ -43,7 +47,7 @@ div.wrapper div div.badge {
     top: 10px;
     box-sizing: border-box;
     padding: 0px;
-    border: 1px black;
+    border: none;
     border-radius: 5px;
     width: 15px;
     height: 15px;
@@ -67,7 +71,7 @@ body button.backToIndex{
     top: 5vh;
     margin: 0px;
     padding: 30px;
-    border: 0;
+    border: none;
     border-radius: 50px;
     color: #063852;
     background-color: #e6df44;
@@ -87,7 +91,8 @@ body div.wrapper div img {
     overflow: scroll;
 }
 
-.description {
+body div.wrapper div div.description {
     box-sizing: content-box;
     text-align: center;
+    border: none;
 }
