@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <title>Vote</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/honorOfFame.css" />
+
+    <!-- Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      img {
+        width: 30vw;
+      }
+
+      button.vote1 {
+        position: fixed;
+        right: 0px;
+        top: 50px;
+        font-size: 30px;
+      }
+      button.vote2 {
+        position: fixed;
+        right: 0px;
+        top: 100px;
+        font-size: 30px;
+      }
+      button.vote3 {
+        position: fixed;
+        right: 0px;
+        top: 150px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html"><button class="backToIndex">Home</button></a>
+    <a href="https://forms.gle/qyQBeQXqPxMQq66XA"
+      ><button class="vote1">패드립부문투표하러가기</button></a
+    >
+    <a href="https://forms.gle/1Buw6zZw81jGtR4g7"
+      ><button class="vote2">의상부문투표하러가기</button></a
+    >
+    <a href="https://forms.gle/gLNxdiF3JQUzBgLY6"
+      ><button class="vote3">일베부문투표하러가기</button></a
+    >
+
+    <div class="wrapper">
+      <ul class="voteList"></ul>
+    </div>
+    <script type="text/javascript">
+      window.onload = () => {
+        const imgNameList = [
+          "김경호빠른별.jpg",
+          "김경호빡촌.jpg",
+          "김경호일베.jpg",
+          "김경호패드립.JPG",
+          "김명준원시인.jpeg",
+          "김우재메갈.JPG",
+          "김우재패드립.jpg",
+          "김준영북괴.jpeg",
+          "김준영일베.jpg",
+          "맹준일베.jpg",
+          "문규탁일베.PNG",
+          "박범진취향.jpeg",
+          "박범진취향2.jpeg",
+          "박범진패드립.png",
+          "박제환베갈.jpg",
+          "영환이생일.jpg",
+          "의상부문1위.jpeg",
+          "의상부문2위.JPG",
+          "의상부문3위.jpg",
+          "이하원마스터이.JPG",
+          "이하원매국.PNG",
+          "이하원일베.jpg",
+          "이하원패드립1.png",
+          "이하원패드립2.png",
+          "이하원패드립5.png",
+          "이하원패드립6.png",
+          "이하원패드립7.png",
+          "인성부문1위.jpg",
+          "일베1위.jpg",
+          "일베2위.JPG",
+          "일베부문3위.JPG",
+          "전재훈속초.JPG",
+          "전재훈나치.jpeg",
+          "전재훈매국.PNG",
+          "전재훈취향.jpeg",
+          "전재훈통베.jpg",
+          "정재원취향.PNG",
+          "젖재매국노.JPG",
+          "젖재일베.jpg",
+          "젖재패드립.jpg",
+          "패드립1위.JPG",
+          "패드립2위.png",
+          "패드립3위.png",
+          "황경묵일베.jpg",
+          "흐균패드립.PNG"
+        ];
+
+        const newImgList = imgNameList.map(imgName => imgName.toString());
+
+        const creatImg = function(imgTitle) {
+          let imgPath = "images/forVote/" + imgTitle;
+          let anImg = document.createElement("img");
+          anImg.setAttribute("src", imgPath);
+          let listElement = document.createElement("li");
+          listElement.appendChild(anImg);
+          return listElement;
+        };
+
+        const voteList = document.querySelector(".voteList");
+
+        for (let image of newImgList) {
+          voteList.appendChild(creatImg(image));
+        }
+      };
+    </script>
+  </body>
+</html>
