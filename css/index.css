@@ -1,72 +1,74 @@
-body > div{
-    text-align: center;
-    box-sizing: content-box;
-    
+body {
+  background-image: url("../images/background.jpeg");
+  background-size: contain;
 }
 
-body button.buttonOne{
-    font-size: 20px;
-    color: #063852;
-    position: fixed;
-    left: 0px; 
-    top: 6vh;
-    border: 0;
-    margin: 0px;
-    padding: 2vw;
-    border-radius: 50px;
-    background-color: #e6df44;
-    transition: background-color .7s;
-    
+body > div {
+  text-align: center;
+  box-sizing: content-box;
+}
 
+body button.buttonOne {
+  font-size: 20px;
+  color: #063852;
+  position: fixed;
+  left: 0px;
+  top: 6vh;
+  border: 0;
+  margin: 0px;
+  padding: 2vw;
+  border-radius: 50px;
+  background-color: #e6df44;
+  transition: background-color 0.7s;
 }
 
 body button.buttonOne:hover {
-    background-color: #e6dfff;
+  background-color: #e6dfff;
 }
 
-body button.buttonTwo{
-    font-size: 20px;
-    position: fixed;
-    left: 0;
-    top: 0.4vh;
-    margin: 0px;
-    padding: 2vw;
-    border: 0;
-    border-radius: 50px;
-    color: #063852;
-    background-color: #e6df44;
-    transition: background-color .7s;
-    
-
+body button.buttonTwo {
+  font-size: 20px;
+  position: fixed;
+  left: 0;
+  top: 0.4vh;
+  margin: 0px;
+  padding: 2vw;
+  border: 0;
+  border-radius: 50px;
+  color: #063852;
+  background-color: #e6df44;
+  transition: background-color 0.7s;
 }
 
 body button.buttonTwo:hover {
-    background-color: #e6dfff;
-
+  background-color: #e6dfff;
 }
 
-div.textBox{
-    overflow: auto;
-    z-index: 100;
-    display: flexbox;
-    font-size: 15vw;
-    color: #063852;
-    font-family: 'Playfair Display', serif;
-
+p {
+  margin: 35vh 0 33vh 0;
+  color: #fdfcfa;
 }
 
+body div.textBox {
+  height: 100vh;
+  align-content: center;
+  overflow: auto;
+  z-index: 100;
+  display: flexbox;
+  font-size: 15vw;
+  color: #063852;
+  font-family: "Playfair Display", serif;
+}
 
 .username {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    border-color: #f0810f;
-    border-width: 1px;
-    border-style: solid;
-    top: 20px;
-    right: 0px;
-    font-size: 5em;
-    color: #f0810f;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  border-color: #f0810f;
+  border-width: 1px;
+  border-style: solid;
+  top: 20px;
+  right: 0px;
+  font-size: 5em;
+  color: #f0810f;
 }
-
-
