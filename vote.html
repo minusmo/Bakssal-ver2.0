@@ -37,6 +37,21 @@
         top: 150px;
         font-size: 30px;
       }
+
+      section {
+        position: fixed;
+        left: 35vw;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      button.toTop {
+        font-size: 30px;
+        background-color: red;
+        border-radius: 5px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+      }
     </style>
   </head>
   <body>
@@ -51,11 +66,26 @@
       ><button class="vote3">일베부문투표하러가기</button></a
     >
 
+    <button onclick="toTop()" class="toTop">TOP</button>
+
+    <section>
+      <h2>번호는 오름차순입니다.</h2>
+    </section>
+
     <div class="wrapper">
       <ul class="voteList"></ul>
     </div>
     <script type="text/javascript">
       window.onload = () => {
+        const topButton = document.querySelector(".toTop");
+
+        function toTop() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+        topButton.onclick = toTop();
+
         const imgNameList = [
           "김경호빠른별.jpg",
           "김경호빡촌.jpg",
