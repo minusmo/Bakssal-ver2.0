@@ -8,7 +8,7 @@
 }
 
 #movieContainer {
-  position: relative;
+  position: absolute;
   display: block;
   background-color: bisque;
   z-index: 0;
@@ -16,7 +16,8 @@
 
 .movieBox {
   position: relative;
-  display: inline-block;
+  display: block;
+  float: left;
 }
 h3 {
   text-align: center;
