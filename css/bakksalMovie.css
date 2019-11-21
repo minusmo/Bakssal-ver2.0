@@ -8,17 +8,21 @@
 }
 
 #movieContainer {
-  position: absolute;
-  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   background-color: bisque;
   z-index: 0;
 }
 
 .movieBox {
+  flex: auto;
   position: relative;
-  display: block;
-  float: left;
+  display: inline-block;
 }
+
 h3 {
   text-align: center;
 }
