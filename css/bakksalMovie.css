@@ -1,39 +1,47 @@
+@import "./reset.css";
+
 #header {
+  padding-top: 30px;
   position: relative;
   display: block;
   width: 100%;
-  background-color: bisque;
+  background-color: #35b369;
   font-size: 3em;
+  font-weight: bolder;
   text-align: center;
 }
 
 #movieContainer {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  background-color: bisque;
+  background-color: #35b369;
   z-index: 0;
 }
 
 .movieBox {
-  flex: auto;
+  margin-top: 30px;
+  flex: 1;
   position: relative;
   display: inline-block;
 }
 
 h3 {
   text-align: center;
+  font-size: 2em;
+  text-shadow: white 1px 1px 1px;
+  font-weight: bolder;
 }
 
 body button.backToIndex {
   font-size: 20px;
   position: fixed;
   left: 0;
-  top: 5vh;
+  top: 10px;
   margin: 0px;
-  padding: 30px;
+  padding: 20px;
   border: none;
   border-radius: 50px;
   color: #063852;

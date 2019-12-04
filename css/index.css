@@ -1,4 +1,6 @@
-body {
+@import "./reset.css";
+
+/* body {
   background-image: url("../images/background.jpeg");
   background-size: contain;
 }
@@ -6,6 +8,19 @@ body {
 body > div {
   text-align: center;
   box-sizing: content-box;
+} */
+
+.textBox {
+  background-image: url("../images/background.jpeg");
+  background-size: 100vw 100vh;
+  box-sizing: border-box;
+  height: 100vh;
+  color: white;
+  overflow: auto;
+  text-align: center;
+  line-height: 50rem;
+  font-size: 25vw;
+  text-shadow: black 10px 10px 1px;
 }
 
 body button.buttonOne {
@@ -44,12 +59,7 @@ body button.buttonTwo:hover {
   background-color: #e6dfff;
 }
 
-p {
-  margin: 35vh 0 33vh 0;
-  color: #fdfcfa;
-}
-
-body div.textBox {
+/* body div.textBox {
   height: 100vh;
   align-content: center;
   overflow: auto;
@@ -58,7 +68,7 @@ body div.textBox {
   font-size: 15vw;
   color: #063852;
   font-family: "Playfair Display", serif;
-}
+} */
 
 .username {
   margin: 0;
