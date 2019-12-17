@@ -1,20 +1,16 @@
 @import "./reset.css";
 
-/* body {
-  background-image: url("../images/background.jpeg");
-  background-size: contain;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-body > div {
-  text-align: center;
-  box-sizing: content-box;
-} */
 
 .textBox {
   background-image: url("../images/background.jpeg");
-  background-size: 100vw 100vh;
-  box-sizing: border-box;
-  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  height: 99vh;
   color: white;
   overflow: auto;
   text-align: center;
