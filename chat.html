@@ -20,19 +20,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
     <script>
+      const herokuURL = "https://nameless-depths-57513.herokuapp.com/";
       const sendButton = document.getElementById("sendButton");
       const textInput = document.getElementById("textInput");
       const chatMessages = document.getElementById("chatMessages");
-      const socket = io("https://124.111.108.223:1557");
+      const socket = io(herokuURL);
       //   const userName = window.prompt("What's yout name?");
 
-      document.addEventListener("click", () => {
+      sendButton.addEventListener("click", (e) => {
+        e.preventDefault();
+
         const text = textInput.value;
         console.log(text);
 
         socket.emit("new message", text);
 
-        textInput.textContent = "";
+        textInput.value = "";
       });
 
       socket.on("greeting", (greeting) => {
